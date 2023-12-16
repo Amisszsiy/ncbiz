@@ -1,0 +1,37 @@
+{{ partial:partials/head }}
+
+<div class="article">
+	<div class="row">
+		<div class="col-md-6 mx-auto">
+			<h2>Find our services</h2>
+			<p>{{ description }}</p>
+		</div>
+	</div>
+	<div class="row">
+		<!--service start -->
+<section id="service" class="service">
+	<div class="container">
+		<div class="service-content">
+			<div class="row">
+				{{ collection:govservices limit="5" }}
+				<div class="col-md-4 col-sm-6">
+					<div class="single-service-item">
+						{{ service_image }}
+						<img src="{{ url }}">
+						{{ /service_image }}
+						<h2><a href="{{ url }}">{{ title }}</h2>
+						<p>
+							{{ service_description }}
+						</p>
+					</div>
+				</div>
+				{{ /collection:govservices }}
+			</div>
+		</div>
+	</div>
+	<!--/.container-->
+
+</section><!--/.service-->
+<!--service end-->
+	</div>
+</div>

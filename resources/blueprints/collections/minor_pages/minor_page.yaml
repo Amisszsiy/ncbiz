@@ -1,0 +1,38 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          display: Title
+          instructions: 'Title of service type'
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          input_type: text
+          antlers: false
+      -
+        handle: description
+        field:
+          antlers: false
+          display: Description
+          type: textarea
+          icon: textarea
+          instructions: 'Overall description of this service type'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+title: 'Minor Page'
