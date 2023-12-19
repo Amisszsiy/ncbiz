@@ -5,10 +5,12 @@ title: 商談会・イベントの運営
 service_description: '自治体・公的機関が主額する商談会やイベントの後方支援をいたします。企画・バイヤー集客・当日の運営までBIZ CENTERにて対応します。ウェピナーの企画・集客・運営も可能です。'
 service_image: uploaded-images/microsoftteams-image-(7).jpg
 updated_by: 1
-updated_at: 1702634005
+updated_at: 1702907329
 service_content:
   -
     type: paragraph
+    attrs:
+      textAlign: left
     content:
       -
         type: text
@@ -31,12 +33,14 @@ service_content:
       -
         type: text
         text: 効果的なイベントコンセプトの開発。
+      -
+        type: hardBreak
+      -
+        type: hardBreak
   -
     type: paragraph
-  -
-    type: paragraph
-  -
-    type: paragraph
+    attrs:
+      textAlign: left
     content:
       -
         type: text
@@ -59,12 +63,14 @@ service_content:
       -
         type: text
         text: 登録管理と参加者エンゲージメントの最適化。
+      -
+        type: hardBreak
+      -
+        type: hardBreak
   -
     type: paragraph
-  -
-    type: paragraph
-  -
-    type: paragraph
+    attrs:
+      textAlign: left
     content:
       -
         type: text
@@ -87,10 +93,14 @@ service_content:
       -
         type: text
         text: イベントの安全性と品質の維持。
+      -
+        type: hardBreak
+      -
+        type: hardBreak
   -
     type: paragraph
-  -
-    type: paragraph
+    attrs:
+      textAlign: left
     content:
       -
         type: text
@@ -113,10 +123,14 @@ service_content:
       -
         type: text
         text: バーチャルイベントの効果的な運営。
+      -
+        type: hardBreak
+      -
+        type: hardBreak
   -
     type: paragraph
-  -
-    type: paragraph
+    attrs:
+      textAlign: left
     content:
       -
         type: text
@@ -129,6 +143,4 @@ service_content:
       -
         type: text
         text: 'BIZ CENTERでは、お客様の期待を超えるサービスを提供することに尽力しています。各イベントは、専門のプロジェクトマネージャーが細部にわたり管理し、最高の結果をもたらすよう努めています。'
-  -
-    type: paragraph
 ---

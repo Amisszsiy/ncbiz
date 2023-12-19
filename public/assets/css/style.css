@@ -16,7 +16,7 @@ font-family: 'Rufina', serif;
 3.  Welcome-hero
 4.  Model-search
 5.  Service
-6.  New-cars
+6.  service-type
 7.  Featured-cars
 8.  Client-say
 9.  Brand
@@ -371,30 +371,30 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 
 
 /*-------------------------------------
-        6. New-cars
+        6. service-type
 --------------------------------------*/
-.new-cars{
+.service-type{
     background: #f8f9fb;
-    padding:112px 0 120px;
+    padding:50px 0 50px;
 }
-.new-cars-content{padding-top:96px;}
-/*.new-cars-txt*/
-.new-cars-txt {margin-left: 29px;margin-bottom: 30px;}
-.new-cars-txt h2 a {
+.service-type-content{padding-top:96px;}
+/*.service-type-txt*/
+.service-type-txt {margin-left: 29px;margin-bottom: 30px;}
+.service-type-txt h2 a {
     font-size:  30px;
     font-weight:  500;
     margin-bottom: 26px;
 }
-.new-cars-txt h2 a span {text-transform:  uppercase;}
-.new-cars-para2 {margin-top: 30px;}
-.welcome-btn.new-cars-btn {
+.service-type-txt h2 a span {text-transform:  uppercase;}
+.service-type-para2 {margin-top: 30px;}
+.welcome-btn.service-type-btn {
     width: 176px;
     margin-top: 32px;
 }
-/*.new-cars-txt*/
+/*.service-type-txt*/
 
 /*.owl-dots */
-.new-cars .owl-theme .owl-dots .owl-dot span {
+.service-type .owl-theme .owl-dots .owl-dot span {
     width: 8px;
     height: 8px;
     margin: 0px 4px;
@@ -402,8 +402,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     border: 1px solid #6a7781;
     border-radius: 50%;
 }
-.new-cars .owl-theme .owl-dots .owl-dot.active span,.new-cars .owl-theme .owl-dots .owl-dot:hover span {background: #6a7781;}
-.new-cars .owl-theme .owl-nav.disabled+.owl-dots {margin-top: 62px;}
+.service-type .owl-theme .owl-dots .owl-dot.active span,.service-type .owl-theme .owl-dots .owl-dot:hover span {background: #6a7781;}
+.service-type .owl-theme .owl-nav.disabled+.owl-dots {margin-top: 62px;}
 /*.owl-dots */
 
 /*-------------------------------------       

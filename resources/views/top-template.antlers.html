@@ -1,201 +1,76 @@
 {{ partial:partials/top-head }}
 
-<!--service start -->
-<section id="service" class="service">
+<!--Organization service section-->
+<section id="service-type" class="service-type">
 	<div class="container">
-		<div class="section-header">
-			<h2>自治体向けサービス</h2>
-		</div>
-		<div class="service-content">
-			<div class="row">
-				<!--Each service goes here-->
-				{{ collection:govservices limit="5" }}
-				<div class="col-md-4 col-sm-6">
-					<div class="single-service-item">
-						{{ service_image }}
-						<img src="{{ url }}">
-						{{ /service_image }}
-						<h2><a href="{{ url }}">{{ title }}</h2>
-						<p>
-							{{ service_description }}
-						</p>
-					</div>
-				</div>
-				{{ /collection:govservices }}
+		<div class="service-type-item">
+			<div class="single-service-type-item">
 
-			</div>
-		</div>
+				<div class="row">
+					{{ get_content from="cc56dd64-404f-44b8-a8a3-92ddb28f56a9" }}
+					<div class="col-md-5 col-sm-12">
+						<div class="service-type-img">
+							{{ service_type_image }}
+							<img src="{{ url }}">
+							{{ /service_type_image }}
+						</div><!--/.service-type-img-->
+					</div>
+					<div class="col-md-7 col-sm-12">
+						<div class="service-type-txt">
+							<h2><a href="{{ url }}">{{title}}</a></h2>
+							<p>
+								{{description}}
+							</p>
+							<button class="welcome-btn service-type-btn" onclick="window.location.href='{{ url }}'">
+								詳細はこちらから
+							</button>
+						</div><!--/.service-type-txt-->
+					</div><!--/.col-->
+					{{ /get_content }}
+				</div><!--/.row-->
+
+			</div><!--/.single-service-type-item-->
+		</div><!--/.service-type-item-->
 	</div><!--/.container-->
 
-</section><!--/.service-->
-<!--service end-->
+</section><!--/.service-type-->
+<!--service-type end -->
 
-<!--new-cars start -->
-<section id="new-cars" class="new-cars">
+<section id="service-type" class="service-type">
 	<div class="container">
-		<div class="section-header">
-			<h2>企業向けサービス</h2>
-		</div><!--/.section-header-->
-		<div class="new-cars-content">
-			<div class="owl-carousel owl-theme" id="new-cars-carousel">
-				{{ collection:govservices limit="5" }}
-				<div class="new-cars-item">
-					<div class="single-new-cars-item">
-						<div class="row">
-							<div class="col-md-4 col-sm-12">
-								<div class="new-cars-img">
-									{{ service_image }}
-									<img src="{{ url }}" style="width: 300px;">
-									{{ /service_image }}
-								</div>
-							</div>
-							<div class="col-md-8 col-sm-12">
-								<div class="new-cars-txt">
-									<h2><a href="{{ url }}">{{ title }}</a></h2>
-									<p>
-										{{ service_description }}
-									</p>
-									<button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
-										詳細はこちらから
-									</button>
-								</div>
-							</div>
-						</div>
+		<div class="service-type-item">
+			<div class="single-service-type-item">
+
+				<div class="row">
+					{{ get_content from="6b63e9c3-0a52-4ca6-ad70-b4b68b4a12ab" }}
+					<div class="col-md-7 col-sm-12">
+						<div class="service-type-txt">
+							<h2><a href="{{ url }}">{{ title }}</a></h2>
+							<p>
+								{{description}}
+							</p>
+							<button class="welcome-btn service-type-btn" onclick="window.location.href='{{ url }}'">
+								詳細はこちらから
+							</button>
+						</div><!--/.service-type-txt-->
+					</div><!--/.col-->
+					<div class="col-md-5 col-sm-12">
+						<div class="service-type-img">
+							{{ service_type_image }}
+							<img src="{{ url }}">
+							{{ /service_type_image }}
+						</div><!--/.service-type-img-->
 					</div>
-				</div>
-				{{ /collection:govservices }}
-			</div>
-		</div>
-	</div>
+					{{ /get_content }}
+				</div><!--/.row-->
 
-</section><!--/.new-cars-->
-<!--new-cars end -->
+			</div><!--/.single-service-type-item-->
+		</div><!--/.service-type-item-->
+	</div><!--/.container-->
 
-<!-- Some kind of carousel might be useful
-<section id="clients-say" class="clients-say">
-	<div class="container">
-		<div class="section-header">
-			<h2>what our clients say</h2>
-		</div>
-		<div class="row">
-			<div class="owl-carousel testimonial-carousel">
-				<div class="col-sm-3 col-xs-12">
-					<div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-img">
-									<img src="{{ site:url }}assets/images/clients/c1.png"
-										alt="image of clients person" />
-								</div>
-							</div>
-							<div class="testimonial-comment">
-								<p>
-									Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem
-									aperiam, eaque ipsa quae ab illo inventore verit.
-								</p>
-							</div>
-							<div class="testimonial-person">
-								<h2><a href="#">tomas lili</a></h2>
-								<h4>new york</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12">
-					<div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-img">
-									<img src="{{ site:url }}assets/images/clients/c2.png"
-										alt="image of clients person" />
-								</div>
-							</div>
-							<div class="testimonial-comment">
-								<p>
-									Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem
-									aperiam, eaque ipsa quae ab illo inventore verit.
-								</p>
-							</div>
-							<div class="testimonial-person">
-								<h2><a href="#">romi rain</a></h2>
-								<h4>london</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12">
-					<div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-img">
-									<img src="{{ site:url }}assets/images/clients/c3.png"
-										alt="image of clients person" />
-								</div>
-							</div>
-							<div class="testimonial-comment">
-								<p>
-									Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem
-									aperiam, eaque ipsa quae ab illo inventore verit.
-								</p>
-							</div>
-							<div class="testimonial-person">
-								<h2><a href="#">john doe</a></h2>
-								<h4>washington</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+</section><!--/.service-type-->
+<!--service-type end -->
 
-</section>
- -->
-
-<!-- May be useful 
-<section id="brand" class="brand">
-	<div class="container">
-		<div class="brand-area">
-			<div class="owl-carousel owl-theme brand-item">
-				<div class="item">
-					<a href="#">
-						<img src="{{ site:url }}assets/images/brand/br1.png" alt="brand-image" />
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<img src="{{ site:url }}assets/images/brand/br2.png" alt="brand-image" />
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<img src="{{ site:url }}assets/images/brand/br3.png" alt="brand-image" />
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<img src="{{ site:url }}assets/images/brand/br4.png" alt="brand-image" />
-					</a>
-				</div>
-
-				<div class="item">
-					<a href="#">
-						<img src="{{ site:url }}assets/images/brand/br5.png" alt="brand-image" />
-					</a>
-				</div>
-
-				<div class="item">
-					<a href="#">
-						<img src="{{ site:url }}assets/images/brand/br6.png" alt="brand-image" />
-					</a>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-</section>
--->
 
 <!--blog start -->
 <section id="blog" class="blog"></section><!--/.blog-->

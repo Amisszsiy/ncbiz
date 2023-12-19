@@ -3,6 +3,23 @@ sections:
     display: Main
     fields:
       -
+        handle: service_type_image
+        field:
+          mode: list
+          container: assets
+          folder: uploaded-images
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Service type image'
+          type: assets
+          icon: assets
+          instructions: 'This image will be shown in top page'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
         handle: title
         field:
           type: text
@@ -24,6 +41,25 @@ sections:
           type: textarea
           icon: textarea
           instructions: 'Overall description of this service type'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: collection-name
+        field:
+          options:
+            govservices: Organization
+            comservices: Company
+          multiple: false
+          clearable: false
+          searchable: true
+          taggable: true
+          push_tags: false
+          cast_booleans: false
+          display: 'Collection Name'
+          type: select
+          icon: select
+          instructions: 'Choose service''s collection/set for this service type'
           listable: hidden
           instructions_position: above
           visibility: visible

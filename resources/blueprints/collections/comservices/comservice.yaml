@@ -1,4 +1,3 @@
-title: GovService
 sections:
   main:
     display: Main
@@ -16,7 +15,6 @@ sections:
           visibility: visible
           input_type: text
           antlers: false
-          instructions: 'Service name'
       -
         handle: service_description
         field:
@@ -24,10 +22,10 @@ sections:
           display: 'Service Description'
           type: textarea
           icon: textarea
+          instructions: 'This description will be shown in services summary page'
           listable: hidden
           instructions_position: above
           visibility: visible
-          instructions: 'This description will be shown in services summary page'
       -
         handle: service_image
         field:
@@ -37,14 +35,14 @@ sections:
           restrict: false
           allow_uploads: true
           show_filename: true
+          max_files: 1
           display: 'Service Image'
           type: assets
           icon: assets
+          instructions: 'This image will be shown on services summary page'
           listable: hidden
           instructions_position: above
           visibility: visible
-          instructions: 'This image will be shown on services summary page'
-          max_files: 1
       -
         handle: service_content
         field:
@@ -118,3 +116,4 @@ sections:
         field:
           type: slug
           localizable: true
+title: ComService
