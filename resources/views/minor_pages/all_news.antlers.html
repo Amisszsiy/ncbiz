@@ -1,0 +1,99 @@
+{{ partial:partials/head }}
+
+<!-- clients-say strat -->
+<section id="clients-say" class="clients-say">
+    <div class="container">
+        <div class="section-header">
+            <h2>最新ニュース</h2>
+        </div>
+        <div class="row">
+            <div class="owl-carousel testimonial-carousel">
+
+                {{ collection from="news" limit="3" }}
+                <div class="col-sm-3 col-xs-12">
+                    <a href="{{ url }}">
+                        <div class="single-testimonial-box">
+                            {{ news_image }}
+                            <img src="{{ url }}" alt="news image" />
+                            {{ /news_image }}
+                            <div class="single-testimonial-inner-box">
+                                <div class="testimonial-description">
+                                    <div class="testimonial-person">
+                                        <h2>{{ title }}</h2>
+                                        <h4>12/20/2023</h4>
+                                    </div>
+                                    <div class="testimonial-comment">
+                                        <p>
+                                            {{ lead | truncate:150 }}
+                                        </p>
+                                    </div><!--/.testimonial-comment-->
+                                </div><!--/.testimonial-description-->
+                            </div>
+                        </div><!--/.single-testimonial-box-->
+                    </a>
+                </div><!--/.col-->
+                {{ /collection }}
+
+            </div><!--/.testimonial-carousel-->
+        </div><!--/.row-->
+    </div><!--/.container-->
+
+</section><!--/.clients-say-->
+<!-- clients-say end -->
+
+<!--Reuse service-type class in this section-->
+<section id="service-type" class="service-type">
+    <div class="container">
+        <form action="{{ url }}">
+            <div class="row vgapping">
+                <div class="col-md-6">
+                    <h3>全てのニュースから検索</h3>
+                </div>
+                <div class="col-md-3">
+                    <input type="search" name="q" class="form-control" placeholder="ニュース検索">
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                     </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- In case of optimal search use search tag instead, I provide ref in github repo. -->
+        {{ collection:news title:contains={{ get:q }} paginate="10" as="article" }}
+            {{ if no_result }}
+                <h3>該当のニュースを見つけておりません。</h3>
+            {{ /if }}
+            {{ article }}
+                <div class="row vgapping">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="service-type-img">
+                            {{ news_image }}
+                                <img src="{{ url }}">
+                            {{ /news_image }}
+                        </div><!--/.service-type-img-->
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                        <div class="service-type-txt">
+                            <h2><a href="{{ url }}">{{title}}</a></h2>
+                            <p>
+                                {{ lead | truncate:150 }}
+                            </p>
+                        </div><!--/.service-type-txt-->
+                    </div>
+                </div>
+            {{ /article }}
+            {{ paginate }}
+                <div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="{{ prev_page }}">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="{{ next_page }}">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            {{ /paginate }}
+        {{ /collection:news }}
+    </div>
+</section>

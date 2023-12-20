@@ -1,0 +1,109 @@
+title: 'Company profile'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          display: Title
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          input_type: text
+          antlers: false
+      -
+        handle: about_company_image
+        field:
+          mode: list
+          container: assets
+          folder: uploaded-images
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'About company image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: about_company_description
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: 'About company description'
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: president_image
+        field:
+          mode: list
+          container: assets
+          folder: uploaded-images
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'President image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: greet_from_president
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: 'Greet from president'
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: company_profile
+        field:
+          display: 'Company profile'
+          type: table
+          icon: table
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: template_field
+        field:
+          hide_partials: true
+          blueprint: false
+          display: 'Template Field'
+          type: template
+          icon: template
+          instructions: 'Fixed about us template'
+          listable: hidden
+          instructions_position: above
+          visibility: visible

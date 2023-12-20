@@ -1,0 +1,86 @@
+{{ partial:partials/head }}
+
+<!--About us section-->
+<section id="service-type" class="service-type">
+	<div class="container">
+		<div class="service-type-item">
+			<div class="single-service-type-item">
+
+				<div class="row">
+					<div class="col-md-5 col-sm-12">
+						<div class="service-type-img">
+							{{ about_company_image }}
+							<img src="{{ url }}">
+							{{ /about_company_image }}
+						</div><!--/.service-type-img-->
+					</div>
+					<div class="col-md-7 col-sm-12">
+						<div class="service-type-txt">
+							<p>
+								{{ about_company_description }}
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</section>
+<!--About us end -->
+
+<!--service start -->
+<!--reuse css structure-->
+<section id="service" class="service">
+	<div class="container">
+		<div class="service-content">
+			<div class="col-md-1 col-sm-12"></div>
+			<div class="col-md-10 col-sm-12">
+				<table class="kaisha">
+					{{ company_profile }}
+					  <tr>
+						{{ cells }}
+						  <td>{{ value | markdown }}</td>
+						{{ /cells }}
+					  </tr>
+					{{ /company_profile }}
+				  </table>
+			</div>
+			<div class="col-md-1 col-sm-12"></div>
+		</div>
+	</div>
+	<!--/.container-->
+
+</section><!--/.service-->
+<!--service end-->
+
+<!--About us section-->
+<section id="service-type" class="service-type">
+	<div class="container">
+		<div class="service-type-item">
+			<div class="single-service-type-item">
+
+				<div class="row">
+					<div class="col-md-7 col-sm-12">
+						<div class="service-type-txt">
+							<p>
+								{{ greet_from_president }}
+							</p>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-12">
+						<div class="service-type-img">
+							{{ president_image }}
+							<img src="{{ url }}">
+							{{ /president_image }}
+						</div><!--/.service-type-img-->
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</section>
+<!--About us end -->
