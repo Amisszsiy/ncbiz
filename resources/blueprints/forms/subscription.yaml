@@ -1,0 +1,17 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: email
+        field:
+          input_type: email
+          antlers: false
+          display: email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required

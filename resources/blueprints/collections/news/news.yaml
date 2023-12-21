@@ -116,4 +116,11 @@ sections:
           listable: hidden
           instructions_position: above
           visibility: visible
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
 title: News

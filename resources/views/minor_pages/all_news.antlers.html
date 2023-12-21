@@ -20,7 +20,7 @@
                                 <div class="testimonial-description">
                                     <div class="testimonial-person">
                                         <h2>{{ title }}</h2>
-                                        <h4>12/20/2023</h4>
+                                        <h4>{{ date format="Y年m月d日" }}</h4>
                                     </div>
                                     <div class="testimonial-comment">
                                         <p>
@@ -79,6 +79,9 @@
                             <h2><a href="{{ url }}">{{title}}</a></h2>
                             <p>
                                 {{ lead | truncate:150 }}
+                            </p>
+                            <p>
+                                {{ date format="Y年m月d日" }}
                             </p>
                         </div><!--/.service-type-txt-->
                     </div>

@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'statamic/statamic',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '7652ff64cbf6ea62b0d8269c107c25c3d1ed0245',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -1341,9 +1341,9 @@
             'dev_requirement' => false,
         ),
         'statamic/statamic' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '7652ff64cbf6ea62b0d8269c107c25c3d1ed0245',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

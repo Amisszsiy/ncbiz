@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/phpinfo', function() {
 //     return phpinfo();
 // });
+
+Route::statamic('contact-us','minor_pages/contact_form');
+
+Route::post('contact-us',[MailController::class,'notifyContact']);

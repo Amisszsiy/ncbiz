@@ -163,6 +163,7 @@ body {
 .section-header p {
     color: #444a57;
     text-transform: capitalize;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -490,7 +491,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     content: "";
     width: 20px;
     height: 3px;
-    background: #3030ea;
+    background:#48e097;
     bottom: 0;
     left: 50%;
     margin-left: -10px;
@@ -606,7 +607,8 @@ nav.navbar.bootsnav .navbar-toggle i {
     -o-transition: .3s;
     transition: .3s;
 }
-.single-testimonial-inner-box{
+
+.single-testimonial-inner-box {
     padding: 50px 30px 57px;
 }
 
@@ -982,12 +984,12 @@ nav.navbar.bootsnav .navbar-toggle i {
     padding: 5%;
 }
 
-.vgapping{
+.vgapping {
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-.vgapping h3{
+.vgapping h3 {
     padding-bottom: 35px;
     text-align: right;
     font-size: 30px;
@@ -1026,6 +1028,21 @@ nav.navbar.bootsnav .navbar-toggle i {
     }
 }
 
+/*===============================
+    Contact
+===============================*/
+.contactText {
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+.contactText p {
+    padding-top: 15px;
+}
+.contactMap {
+    text-align: center;
+}
+
 .searchButton {
     width: 40px;
     height: 36px;
@@ -1036,4 +1053,39 @@ nav.navbar.bootsnav .navbar-toggle i {
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
-  }
+}
+
+.contactForm {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contactForm input,
+.contactForm textarea,
+.contactForm button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent white */
+}
+
+.contactForm button {
+    background-color: #48e097;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactForm button:hover {
+    background-color: #27ba73;
+}
