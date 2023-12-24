@@ -9,7 +9,7 @@
         <div class="row">
             <div class="owl-carousel testimonial-carousel">
 
-                {{ collection from="news" limit="3" }}
+                {{ collection from="news" limit="4" }}
                 <div class="col-sm-3 col-xs-12">
                     <a href="{{ url }}">
                         <div class="single-testimonial-box">
@@ -61,7 +61,7 @@
         </form>
 
         <!-- In case of optimal search use search tag instead, I provide ref in github repo. -->
-        {{ collection:news title:contains={{ get:q }} paginate="10" as="article" }}
+        {{ collection:news title:contains={{ get:q }} sort="date:desc" paginate="5" as="article" }}
             {{ if no_result }}
                 <h3>該当のニュースを見つけておりません。</h3>
             {{ /if }}
